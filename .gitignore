@@ -1,0 +1,6 @@
+.idea
+venv
+000*.py
+__pycache__
+local_settings.py
+*.pyc
