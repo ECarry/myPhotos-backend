@@ -10,4 +10,5 @@ class Photo(models.Model):
     time = models.DateField(verbose_name="拍摄时间")
     desc = models.TextField(verbose_name="简介")
     url = models.ImageField(upload_to='images/%Y/%m/%d/')
+    location = models.CharField(max_length=32, verbose_name="拍摄地点")
     type = models.CharField(max_length=2, choices=TYPE_CHOICES, verbose_name="类型")
